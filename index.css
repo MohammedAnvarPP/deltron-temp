@@ -1,53 +1,184 @@
-
 .section-header h3 {
-    font-size: 36px;
-    color: #283d50;
-    text-align: center;
-    font-weight: 500;
-    position: relative;
+  font-size: 36px;
+  color: #283d50;
+  text-align: center;
+  font-weight: 500;
+  position: relative;
 }
 
+/* img {
+  width: 200px;
+  height: 200px;
+  animation: scroll 100s linear infinite;
+}
+
+.slide-track {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  overflow: hidden;
+}
+
+.slider {
+  margin-top: 10px;
+  background-color: whitesmoke;
+  padding: 20px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translatex(-1000%);
+  }
+} */
+
+.slider {
+    height: 200px;
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  }
+  .slider::before,
+  .slider::after{
+    position:absolute;
+    /* background-image:linear-gradient(to right,rgb(216, 216, 216) 0%,rgba(255,255,255,0) 100%); */
+    content:'';
+    height:100%;
+    width:25%;
+    z-index:2;pointer-events:none;
+  }
+  .slider::before{
+    left:0;
+    top:0;
+  }
+  .slider::after{
+    right:0;
+    top:0;
+    transform:rotateZ(180deg);
+  }
+  
+  /*  IMPORTANT CODE BELOW */
+  
+  .slide-track {
+    width: calc(150px * 20);
+    display: flex;
+    animation: scroll 20s linear infinite;
+    justify-content: space-between;
+  }
+  
+  .slide-track2 {
+    width: calc(150px * 15);
+    display: flex;
+    animation: scroll2 15s linear infinite;
+    justify-content: space-between;
+  }
+  
+  .slide {
+    width: 200px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+    transition:0.5s;
+    cursor:pointer;
+  }
+  .slide:hover{
+    transform:scale(0.8)
+  }
+  
+   @keyframes scroll {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(calc(-150px * 10));
+    }
+  }
+  
+  @keyframes scroll2 {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(calc(-150px * 5));
+    }
+  } 
+  
+  @media screen and (max-width: 768px) {
+    .slide-track {
+      width: calc(80px * 20);
+    }
+  
+    .slide-track2 {
+      width: calc(80px * 15);
+    }
+  
+    .slide {
+      width: 80px;
+    }
+  
+    @keyframes scroll {
+      0% {
+        transform: translateX(0px);
+      }
+      100% {
+        transform: translateX(calc(-80px * 10));
+      }
+    }
+  
+    @keyframes scroll2 {
+      0% {
+        transform: translateX(0px);
+      }
+      100% {
+        transform: translateX(calc(-80px * 5));
+      }
+    }
+  }
+  
+
 .section-header p {
-    text-align: center;
-    margin: auto;
-    font-size: 15px;
-    padding-bottom: 60px;
-    color: #556877;
-    width: 50%;
+  text-align: center;
+  margin: auto;
+  font-size: 15px;
+  padding-bottom: 60px;
+  color: #556877;
+  width: 50%;
 }
 
 #clients {
-    padding: 60px 0;
-    
+  padding: 60px 0;
 }
 #clients .clients-wrap {
-    border-top: 1px solid #d6eaff;
-    border-left: 1px solid #d6eaff;
-    margin-bottom: 30px;
+  border-top: 1px solid #d6eaff;
+  border-left: 1px solid #d6eaff;
+  margin-bottom: 30px;
 }
 
 #clients .client-logo {
-    padding: 64px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    border-right: 1px solid #d6eaff;
-    border-bottom: 1px solid #d6eaff;
-    overflow: hidden;
-    background: #fff;
-    height: 160px;
+  padding: 64px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-right: 1px solid #d6eaff;
+  border-bottom: 1px solid #d6eaff;
+  overflow: hidden;
+  background: #fff;
+  height: 160px;
 }
 
 #clients img {
-    transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
- 
