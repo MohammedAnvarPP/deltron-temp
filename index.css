@@ -78,12 +78,15 @@
   }
   
   .slide {
-    width: 200px;
-    height: 200px;
+    /* width: 200px;
+    height: 200px; */
     display: grid;
     place-items: center;
     transition:0.5s;
     cursor:pointer;
+  }
+  .slide img{
+    height: 6rem;
   }
   .slide:hover{
     transform:scale(0.8)
