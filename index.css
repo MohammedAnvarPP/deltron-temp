@@ -257,3 +257,12 @@
 #mob-view img {
   transition: all 0.4s ease-in-out;
 }
+/* icons setting */
+.icon-img{
+  position: relative;
+}
+.icon-img img{
+  width: 4rem;
+  z-index: 1;
+  position: absolute;
+}
