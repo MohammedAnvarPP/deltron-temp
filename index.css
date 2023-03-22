@@ -258,10 +258,10 @@
   transition: all 0.4s ease-in-out;
 }
 /* icons setting */
-.icon-img{
+.icon-img {
   position: relative;
 }
-.icon-img img{
+.icon-img img {
   width: 4rem;
   z-index: 1;
   position: absolute;
@@ -269,24 +269,23 @@
 /* .logosss{ */
 /* } */
 
-.logoEntry img{ 
+.logoEntry img {
   /* width: 100px; */
   height: 3rem;
   margin-right: 10px;
   /* filter: grayscale(100%); */
- }
+}
 
 .logosss {
-   width: 100%;
-    display: flex;
-    padding: 0 10px;
-    flex-wrap: wrap;
-    gap: 3rem;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  padding: 0 10px;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
 }
 /* /////////////////////////////clientlog0 */
-
 
 .section-header h3 {
   font-size: 36px;
@@ -307,7 +306,6 @@
 
 #clients {
   padding: 60px 0;
-  
 }
 #clients .clients-wrap {
   border-top: 1px solid #d6eaff;
@@ -338,9 +336,19 @@
 
 #clients img {
   transition: all 0.4s ease-in-out;
-
 }
 
-.img-client{
+.img-client {
   height: 6rem;
+}
+
+.visMisHeader img {
+  width: 100%;
+}
+.visMisContent {
+  padding: 30px;
+  background-color: #fff;
+}
+.visMisContent p {
+  text-align: justify;
 }
